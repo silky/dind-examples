@@ -1,0 +1,7 @@
+name: just-try-it
+
+services:
+  app:
+    build:
+      context: ../src
+      dockerfile: ../0-just-try-it/Dockerfile

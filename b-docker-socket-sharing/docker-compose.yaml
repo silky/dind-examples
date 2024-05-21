@@ -1,0 +1,10 @@
+name: b-docker-socket-sharing
+
+services:
+  app:
+    build:
+      context: ../src
+      dockerfile: ../b-docker-socket-sharing/Dockerfile
+    # Share the host docker socket
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

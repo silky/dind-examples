@@ -1,0 +1,7 @@
+name: a-dind
+
+services:
+  app:
+    build:
+      context: ../src
+      dockerfile: ../a-dind/Dockerfile
