@@ -14,9 +14,11 @@
             name = "c-nix";
             tag  = "latest";
             contents = [
-              pkgs.bash
-              pkgs.docker-client
+              # This is just to look around the image
               pkgs.coreutils
+
+              # These are required
+              pkgs.docker-client
               ../src
             ];
             config = {
